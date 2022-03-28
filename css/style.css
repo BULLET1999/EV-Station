@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    height: 100%;
+}
+.navbar {
+    overflow: hidden;
+    list-style-type: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: black; 
+}
+.navbar li {
+    padding: 0;    
+    float: left;        
+}
+
+.navbar li a {
+    font-size: medium;
+    font-weight: 500; 
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(32, 32, 32);
+    color: green;
+}
+
+.landing_row {
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 50px 50px 50px 50px;
+    height: 50%;
+    display: flex;        
+}
+.landing_left {  
+    width: 50%;    
+    height: auto;
+}
+
+.landing_right {        
+    width: 50%;
+    font-weight: 600;
+    position: relative;    
+    height: auto;    
+    float: right;    
+}
+
+.landing_right_text {
+    top: 50%;
+    color: green;
+    left: 50%;    
+    position: absolute;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.type_location {
+    margin: 80px 50px 0px 50px; 
+    display: flex;    
+    text-align: center;
+}
+
+.type_location_type {
+    border-right: 1px solid black;
+    width: 50%;
+    padding: 50px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.type_location_type a {
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: #4CAF50;
+    padding: 10px 30px;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.type_location_locate {
+    border-left: 1px solid black;
+    width: 50%;
+    padding: 50px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.type_location_locate a {
+    color: white;
+    border-radius: 2px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    padding: 10px 30px;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.charger_info_text {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 20%;
+    padding-top: 5%;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-right: 20%;
+}
+
+.charger_info_image {    
+    margin: 2% 10% 2% 10%;
+}
+
+.container_host {
+    padding: 20px 20px 20px 20px;
+    margin: 0% 50px 50px 50px;    
+    height: 50%;
+    display: flex;
+}
+
+.host_left {
+    padding: 0;
+    width: 50%;
+}
+
+.host_right {
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+.host_right_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 600;    
+    transform: translate(-50%,-50%);
+}
+
+.host_right_text a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;    
+    padding: 10px 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.host_right_text a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.34),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.footer_upper {
+    padding: 10px 50px 10px 50px;    
+    background-color: #eaecd7;
+    display: flex;
+    
+}
+
+.footer_left {
+    width: 33.33%;    
+    background-color: yellow;
+}
+
+.footer_middle {
+    padding-top: 20px;
+    text-align: center;
+    width: 33.33%;
+    
+}
+
+.footer_middle a {
+    color: black;
+    font-size: xx-large;
+    font-weight: 700;
+    text-decoration: none;    
+}
+
+.footer_middle a i {
+    letter-spacing: 10px;
+}
+
+.footer_right {
+    padding-top: 20px;
+    width: 33.33%;
+    text-align: right;
+}
+
+.footer_right h2 {
+    font-size: xx-large;
+}
+
+.footer_right a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer_bottom {
+    text-align: center;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #eaecd7;
+    height: auto;
+}
