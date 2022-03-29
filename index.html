@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/script.js"></script>
     <script src="https://kit.fontawesome.com/e2eadde2db.js" crossorigin="anonymous"></script>
     <title>ELECTRON-The True Charging Solution</title>
   </head>
   <body>
-    <nav class="nav_contant">      
-      <ul class="navbar">
-        <li class="Menu_icon" style="float: right;"><a href="index.html"><span>ELECT</span><span style="color: green;">RON</span></a></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="host.html">HOST</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact us.html">CONTACT US</a></li>        
-      </ul>
-    </nav>
+    <div class="navbar" id="myTopnav">
+      <a href="index.html"><span>ELECT</span><span style="color: green;">RON</span></a>
+      <a href="host.html">HOST</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact us.html">CONTACT US</a>        
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
+    </div>
     <div class="landing_row">
       <div class="landing_left">
         <img src="images/banner.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
@@ -84,8 +83,9 @@
         <a href="#"><i class="fa-brands fa-twitter" style="color: #1d99f0;"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin-in" style="color: #0a66c2;"></i></a>
         <hr>
-        <p>Connect With Us: nikhiljangrakumar@gmail.com</p>
-        <p class="">Call Us: 834713XXXX</p>
+        <br>
+        <p><i class="fa-solid fa-envelope"></i> - nikhiljangrakumar@gmail.com</p>
+        <p class=""><i class="fa-solid fa-phone"></i> - 834713XXXX</p>
       </div>
       <div class="footer_right">
         <h2>Usefull Links</h2>
@@ -97,6 +97,6 @@
     </div>
     <footer class="footer_bottom">
       <p class="">&copy; Copyright ELECTRON. All Rights Reserved</p>
-    </footer>    
+    </footer>
   </body>
 </html>
