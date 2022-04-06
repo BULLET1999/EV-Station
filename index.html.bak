@@ -10,11 +10,11 @@
     <title>ELECTRON-The True Charging Solution</title>
   </head>
   <body>
-    <div class="navbar" id="myTopnav">      	  
+    <div class="navbar" id="myTopnav">
       <a href="index.html"><span>ELECT</span><span style="color: green;">RON</span></a>
       <a href="host.html">HOST</a>
       <a href="about.html">ABOUT</a>
-      <a href="contact_us.html">CONTACT US</a>       
+      <a href="contact_us.html">CONTACT US</a>        
       <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
     </div>
     <div class="landing_row">
@@ -32,7 +32,9 @@
     <div class="type_location">
       <div class="type_location_type">
         <h2 style="color: green;">Find Chargers <i class="fa-solid fa-magnifying-glass"></i></h2>
-        <p class="">Find the types of EVs chargers <br> available in Indian.</p>
+        <p class="">
+          Find the types of EVs chargers <br> available in Indian.
+        </p>
         <br>
         <a href="charger_info.html">Click Me</a>
       </div>
@@ -56,7 +58,7 @@
     </div>
     <div class="container_host">
       <div class="host_left">
-
+        <img src="images/Host.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
       </div>
       <div class="host_right">
         <div class="host_right_text">
@@ -67,7 +69,6 @@
         </div>        
       </div>
     </div>
-    <br>
     <div class="footer_upper">
       <div class="footer_left">
         <img src="images/footer_left.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">

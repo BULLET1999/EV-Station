@@ -59,50 +59,61 @@ html, body {
     .navbar.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
 }
 
 .landing_row {
-    border: 1px solid green;
-    border-radius: 10px;
-    margin: 50px 50px 50px 50px;
-    height: 50%;
+    margin: 50px 50px 0px 50px;
+    flex-direction: row;
     display: flex;        
 }
+
 .landing_left {  
-    width: 50%;    
-    height: auto;
+    flex: 50%;
 }
 
-.landing_right {        
-    width: 50%;
-    font-weight: 600;
-    position: relative;    
-    height: auto;    
-    float: right;    
+.landing_right {           
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;    
 }
 
 .landing_right_text {
-    top: 50%;
+    text-align: center;
     color: green;
-    left: 50%;    
-    position: absolute;
     letter-spacing: 2px;
-    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+    .landing_row {
+        margin: 5px 5px 0px 5px;
+        flex-direction: column;
+    }
+    .landing_left {
+        margin: 0px;
+    }
+
+    .landing_right_text {
+        margin: 0px; 
+        padding: 99px 0 99px 0;    
+    }
 }
 
 .type_location {
-    margin: 80px 50px 0px 50px; 
-    display: flex;    
+    margin: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;    
     text-align: center;
 }
 
 .type_location_type {
-    border-right: 1px solid black;
-    width: 50%;
+    flex: 50%;
     padding: 50px;
     color: black;
+    border-right: 1px solid black;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -110,7 +121,6 @@ html, body {
 .type_location_type a {
     text-decoration: none;
     color: white;
-    border-radius: 2px;
     background-color: #4CAF50;
     padding: 10px 30px;
     letter-spacing: 0.5px;
@@ -118,17 +128,16 @@ html, body {
 }
 
 .type_location_locate {
-    border-left: 1px solid black;
-    width: 50%;
+    flex: 50%;
     padding: 50px;
     color: black;
+    border-left: 1px solid black;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .type_location_locate a {
     color: white;
-    border-radius: 2px;
     background-color: #4CAF50;
     text-decoration: none;
     padding: 10px 30px;
@@ -136,45 +145,89 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 800px) {
+    .type_location {
+        flex-direction: column;
+        margin: 5px 5px 0px 5px;
+    }
+    
+    .type_location_type {
+        padding: 50px 0px 50px 0px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    .type_location_locate {
+        border: none;
+        padding: 50px 0px 50px 0px;
+        border-top: 1px solid black;
+    }
+}
+
+.charger_info {
+    margin: 50px 50px 0 50px;
+}
+
 .charger_info_text {
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 20%;
-    padding-top: 5%;
+    padding: 0% 10% 0% 10%;
+    padding-top: 0%;
     text-align: justify;
     letter-spacing: 3px;
     line-height: 1.5;
     font-weight: 600;
-    padding-right: 20%;
 }
 
 .charger_info_image {    
     margin: 2% 10% 2% 10%;
 }
 
+@media (max-width: 800px) {
+    .charger_info {
+        margin: 5px;
+    } 
+
+    .charger_info_text {
+        padding: 5%;
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+    }
+
+    .charger_info_text h1 {
+        font-size: larger;
+        padding-bottom: 10px;
+    }
+
+    .charger_info_image {
+        margin: 2% 0%;
+    }
+}
+
 .container_host {
-    padding: 20px 20px 20px 20px;
-    margin: 0% 50px 50px 50px;    
-    height: 50%;
+    margin: 50px 50px 25px 50px;
     display: flex;
+    height: 60%;
+    flex-direction: row;
 }
 
 .host_left {
-    padding: 0;
-    width: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/Host.png');
+    flex: 50%;
 }
 
 .host_right {
-    width: 50%;
-    float: right;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 50%;
 }
 
-.host_right_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-weight: 600;    
-    transform: translate(-50%,-50%);
+.host_right_text {    
+    text-align: center;
+    font-weight: 600;
 }
 
 .host_right_text a {
@@ -192,9 +245,15 @@ html, body {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.34),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
+@media (max-width: 800px) {
+    .container_host {
+        flex-direction: column;
+        margin: 5px 5px 0px 5px;
+    }        
+}
 
 .footer_upper {
+    margin: 25px 0px 0px 0px;
     padding: 10px 50px 10px 50px;    
     background-color: #eaecd7;
     display: flex;
@@ -261,7 +320,7 @@ html, body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/images/800_3743947_kw3t938ta6tjabc6s1va1kxtkso0sjfiukkmm0bz_business-men-talking-to-each-other-on-the-phone-vector-office-friends-colleagues-boss-ceo-communicating-male-isolated-flat-cartoon-character-illustration.jpg);
+    background-image: url('../images/Contact.jpg');
     flex: 50%;
 }
 
@@ -313,14 +372,30 @@ html, body {
     color: #4CAF50;
     border: 2px solid #4CAF50;
 }
+
 @media (max-width: 800px) {
+    
+    
+
+    .contact_landing {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .contact_landing_image {
+        padding: 80px;
+    }
+
+    .contact_landing_form {
+        margin: 0px 0px 10px 0px;
+        padding: 10px;
+    }
+
     .footer_upper {
         flex-direction: column;
         padding: 0px;
     }
-    .contact_landing {
-        flex-direction: column;
-    }
+
     .footer_right {
         text-align: center;
     }
