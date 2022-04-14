@@ -253,7 +253,7 @@ html, body {
 }
 
 .footer_upper {
-    margin: 25px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 10px 50px 10px 50px;    
     background-color: #eaecd7;
     display: flex;
@@ -305,7 +305,97 @@ html, body {
     height: auto;
 }
 
+/*Host.html page CSS*/
+.host_landing_container {
+    display: flex;    
+    flex-direction: row; 
+}
 
+.host_landing_left {
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    padding: 50px 0px 50px 50px;
+    flex: 50%;
+}
+
+.host_landing_left a{
+    text-decoration: none;
+    background-color: #4CAF50;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 20px;
+}
+ 
+.host_landing_right {
+    margin: 20px;
+    padding: 0px 50px 0px 0px;
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+    .host_landing_container {
+        flex-direction: column;        
+    }
+    
+    .host_landing_left {
+        margin: 0px 5px 0px 5px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .host_landing_right {
+        padding: 0px;
+        margin: 0px 5px 0px 5px;
+    }
+}
+
+.host_form_container {
+    background-color: snow;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px 300px 20px 300px;
+}
+
+.host_form {
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin: 20px;
+    line-height: 4;
+    padding: 20px 20px 50px 20px;
+    background-color: white;
+}
+
+.host_form input[type=text], input[type=tel], input[type=email] {
+    width: 45%;
+    border: .5px solid lightgray;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.host_form input[type=submit] {
+    width: 150px;
+    border-radius: 3px;
+    background-color: lightblue;
+    padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+    .host_form_container {
+        text-align: center;
+        padding: 30px 1px 20px 1px;
+    }
+
+    .host_form {
+        margin: 5px;
+        line-height: 1.5;
+        padding: 15px 9px 30px 9px;
+        background-color: white;
+    }
+        
+}
 /*Contact Us.html page CSS*/
 
 .contact_landing {

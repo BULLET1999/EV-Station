@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/e2eadde2db.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Become Host</title>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 2000, function(){
+            window.location.hash = hash;
+            });
+        }
+        });
+    });
+    </script>
   </head>
   <body>
     <div class="navbar" id="myTopnav">
@@ -17,8 +33,33 @@
       <a href="contact_us.html">CONTACT US</a>        
       <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
     </div>
+    <div class="host_landing_container">
+      <div class="host_landing_left">
+        <h1>Host a <span style="color: black;">ELECT</span><span style="color: green;">RON</span> EV charging station</h1>
+        <p class="">Join our hands to build the future of emobility. Earn and grow with us by being a part of the smartest EV charging network in the world.</p>
+        <p class="">Help us make <span style="color: #4CAF50;">GREENER and CLEANER</span> world with you.</p>
+        <br>
+        <a href="#host_form_container">Get in Touch</a>
+      </div>
+      <div class="host_landing_right">
+        <img src="images/Host_landing.png" alt="" class="" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
     <div class="">
-        <h1 style="text-align: center;">HOST</h1>
+      <img src="images/host_process1.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="host_form_container" id="host_form_container">
+      <h1 style="color: green;">Intresed in Becoming EV charging Station host?</h1>
+      <div class="host_form">
+        <h2 style="color: green;">How to install a EV charging station? Fill the form</h2>
+        <form action="">
+          <input type="text" id="fname" name="Full Name" placeholder="Full Name">
+          <input type="tel" name="Contact Number" id="Cnumber" maxlength="10" placeholder="Contact Number"><br>
+          <input type="email" name="email" id="email" placeholder="Whats your email">
+          <input type="text" id="city" name="City" placeholder="Your City"><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
     </div>
     <div class="footer_upper">
       <div class="footer_left">
