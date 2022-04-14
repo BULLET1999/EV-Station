@@ -391,10 +391,15 @@ html, body {
     .host_form {
         margin: 5px;
         line-height: 1.5;
-        padding: 15px 9px 30px 9px;
+        padding: 15px 2px 30px 2px;
         background-color: white;
     }
-        
+    
+    .host_form input[type=text], input[type=tel], input[type=email] {
+        width: 80%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
 }
 /*Contact Us.html page CSS*/
 
