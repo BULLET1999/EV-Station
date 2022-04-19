@@ -24,16 +24,16 @@
         <h1 style="color: #4CAF50; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact US</h1>
         <p style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Reach us out</p>
         <br>
-        <form action="">
-          <input type="text" id="Custname" name="fullname" placeholder="Full Name">
+        <form>
+          <input type="text" id="Custname" name="fullname" placeholder="Full Name" required>
           <br>
-          <input type="text" id="Custphnum" name="phonenumber" placeholder="Phone Number">
+          <input type="text" id="Custphnum" name="phonenumber" placeholder="Phone Number" required>
           <br>
-          <input type="text" id="Custemail" name="email" placeholder="What's your Email">
+          <input type="email" id="Custemail" name="email" placeholder="What's your Email" required>
           <br>
           <textarea name="query" id="query" rows="4" placeholder="Ask Question"></textarea>
           <br>
-          <input type="submit" value="SEND">
+          <input type="submit" onsubmit="sendmail(); reset(); return false;" value="SEND">
         </form>
       </div>
     </div>
@@ -68,5 +68,21 @@
     <footer class="footer_bottom">
       <p class="">&copy; Copyright ELECTRON. All Rights Reserved</p>
     </footer>    
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendmail(){
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "nikhiljangrakumar@gmail.com",
+      Password : "Nikhil@8347",
+      To : 'nikhiljangrakumar@gmail.com',
+      From : document.getElementById(Custemail).value,
+      Subject : "From Contact Form",
+      Body : "And this is the body"
+    }).then(
+      message => alert(message)
+      );
+    }
+  </script>
   </body>
 </html>

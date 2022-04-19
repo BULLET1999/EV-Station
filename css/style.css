@@ -401,6 +401,41 @@ html, body {
         box-sizing: border-box;
     }
 }
+
+
+/*About_Us.html page CSS*/
+.about_us_landing {
+    background-color: #000;
+    padding: 100px 200px 100px 200px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2;
+    font-size: larger;
+    color: white;
+    background-image: url('../images/download_ccexpress.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about_us_landing_text {
+    border: 0px solid white;
+    text-align: justify;
+    padding: 5px;
+}
+
+@media (max-width: 800px) {
+    .about_us_landing {
+        padding: 10px;
+        font-size: medium;
+        line-height: normal;
+    }
+
+    .about_us_landing_text {
+        padding: 0px;
+    }        
+}
+
 /*Contact Us.html page CSS*/
 
 .contact_landing {
@@ -440,7 +475,26 @@ html, body {
     margin-bottom: 10px;
     resize: vertical;
 }
+
+.contact_landing_form input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4CAF50;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+
+}
+
 .contact_landing_form input[type=text]:focus {
+    border: 2px solid red;
+}
+
+.contact_landing_form input[type=email]:focus {
     border: 2px solid red;
 }
 
