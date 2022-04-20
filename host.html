@@ -52,15 +52,44 @@
       <h1 style="color: green;">Intresed in Becoming EV charging Station host?</h1>
       <div class="host_form">
         <h2 style="color: green;">How to install a EV charging station? Fill the form</h2>
-        <form action="">
+        <form method="post">
           <input type="text" id="fname" name="Full Name" placeholder="Full Name">
-          <input type="tel" name="Contact Number" id="Cnumber" maxlength="10" placeholder="Contact Number"><br>
+          <input type="tel" name="Contact Number" id="cnumber" maxlength="10" placeholder="Contact Number"><br>
           <input type="email" name="email" id="email" placeholder="Whats your email">
           <input type="text" id="city" name="City" placeholder="Your City"><br>
-          <input type="submit" value="Send Message">
+          <button id="btn">Send Message</button>
         </form>
       </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var fname = document.getElementById("fname").value;
+        var email = document.getElementById("email").value;
+        var cnumber = document.getElementById("cnumber").value;
+        var city = document.getElementById("city").value;
+        var body =
+          "Name:- " +
+          fname +
+          "<br/> Number:- " +
+          cnumber +
+          "<br/> Email:- " +
+          email +
+          "<br/> City:- " +
+          city;
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "cu.18bcs1894@gmail.com",
+          Password: "wqycxdwbqprdludc",
+          To: "cu.18bcs1894@gmail.com",
+          From: email,
+          Subject: 'From Host Page',
+          Body: body,
+        }).then((message) => alert(message));
+      });
+    </script>
     <div class="footer_upper">
       <div class="footer_left">
         <img src="images/footer_left.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">

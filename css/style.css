@@ -366,7 +366,7 @@ html, body {
     background-color: white;
 }
 
-.host_form input[type=text], input[type=tel], input[type=email] {
+.host_form input[type=text] {
     width: 45%;
     border: .5px solid lightgray;
     border-radius: 2px;
@@ -375,7 +375,25 @@ html, body {
     box-sizing: border-box;
 }
 
-.host_form input[type=submit] {
+.host_form input[type=tel] {
+    width: 45%;
+    border: .5px solid lightgray;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.host_form input[type=email] {
+    width: 45%;
+    border: .5px solid lightgray;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.host_form #btn {
     width: 150px;
     border-radius: 3px;
     background-color: lightblue;
@@ -395,7 +413,19 @@ html, body {
         background-color: white;
     }
     
-    .host_form input[type=text], input[type=tel], input[type=email] {
+    .host_form input[type=text] {
+        width: 80%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .host_form input[type=tel] {
+        width: 80%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .host_form input[type=email] {
         width: 80%;
         margin: 10px;
         box-sizing: border-box;
@@ -463,9 +493,10 @@ html, body {
     border-radius: 5px;
 }
 
-.contact_landing_form input[type=text], textarea {
+.contact_landing_form input, textarea {
     width: 100%;
     padding: 12px;
+    border-radius: 3px;
     border: 2px solid #4CAF50;
     box-sizing: border-box;
     outline: none;
@@ -476,56 +507,20 @@ html, body {
     resize: vertical;
 }
 
-.contact_landing_form input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #4CAF50;
-    box-sizing: border-box;
-    outline: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    resize: vertical;
-
-}
-
-.contact_landing_form input[type=text]:focus {
-    border: 2px solid red;
-}
-
-.contact_landing_form input[type=email]:focus {
-    border: 2px solid red;
-}
-
-.contact_landing_form textarea:focus {
-    border: 2px solid red;
-}
-
-.contact_landing_form input[type=submit] {
-    background-color: #4CAF50;
-    border: 2px solid #000;
-    color: white;
-    text-align: center;
-    border-radius: 2px;
-    padding: 10px;
+.contact_landing_form #btn {
+    padding: 10px 15px;
     cursor: pointer;
-    font-family: sans-serif;
-    font-weight: 600;
-    width: 100%;
-    letter-spacing: 1px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 2px;
 }
 
-.contact_landing_form input[type=submit]:hover {
-    background-color: white;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
+.contact_landing_form input:focus, textarea:focus {
+    border: 2px solid red;
 }
 
 @media (max-width: 800px) {
-    
-    
-
     .contact_landing {
         flex-direction: column;
         margin: 5px;

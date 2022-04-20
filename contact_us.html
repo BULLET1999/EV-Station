@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/e2eadde2db.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
   </head>
@@ -24,20 +25,15 @@
         <h1 style="color: #4CAF50; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact US</h1>
         <p style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Reach us out</p>
         <br>
-        <form>
-          <input type="text" id="Custname" name="fullname" placeholder="Full Name" required>
-          <br>
-          <input type="text" id="Custphnum" name="phonenumber" placeholder="Phone Number" required>
-          <br>
-          <input type="email" id="Custemail" name="email" placeholder="What's your Email" required>
-          <br>
-          <textarea name="query" id="query" rows="4" placeholder="Ask Question"></textarea>
-          <br>
-          <input type="submit" onsubmit="sendmail(); reset(); return false;" value="SEND">
-        </form>
+        <form method="post">
+          <input type="text" name="fname" id="fname" placeholder="Full name" required autocomplete="off" reset>
+          <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="off">
+          <input type="tel" name="Cnumber" id="cnumber" placeholder="Contact Number" required autocomplete="off">
+          <textarea name="query" id="subject" placeholder="Ask anything" rows="10" autocomplete="off"></textarea>
+          <button id="btn">Send Message</button>
+        </form>                
       </div>
-    </div>
-
+    </div>    
     <div class="footer_upper">
       <div class="footer_left">
         <img src="images/footer_left.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
@@ -67,22 +63,36 @@
     <hr>
     <footer class="footer_bottom">
       <p class="">&copy; Copyright ELECTRON. All Rights Reserved</p>
-    </footer>    
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendmail(){
-      Email.send({
-      Host : "smtp.gmail.com",
-      Username : "nikhiljangrakumar@gmail.com",
-      Password : "Nikhil@8347",
-      To : 'nikhiljangrakumar@gmail.com',
-      From : document.getElementById(Custemail).value,
-      Subject : "From Contact Form",
-      Body : "And this is the body"
-    }).then(
-      message => alert(message)
-      );
-    }
-  </script>
+    </footer>
+
+<!-- Adding script for form-->
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var fname = document.getElementById("fname").value;
+        var email = document.getElementById("email").value;
+        var cnumber = document.getElementById("cnumber").value;
+        var subject = document.getElementById("subject").value;
+        var body =
+          "Name:- " +
+          fname +
+          "<br/> Number:- " +
+          cnumber +
+          "<br/> Email:- " +
+          email +
+          "<br/> Query:- " +
+          subject;
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "cu.18bcs1894@gmail.com",
+          Password: "wqycxdwbqprdludc",
+          To: "cu.18bcs1894@gmail.com",
+          From: email,
+          Subject: 'From Contact Page',
+          Body: body,
+        }).then((message) => alert(message));
+      });
+    </script>
   </body>
 </html>
