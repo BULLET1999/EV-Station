@@ -1,0 +1,1141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+.container .content h3 span {
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1 {
+  font-size: 50px;
+  color: #333;
+}
+
+.container .content h1 span {
+  color: crimson;
+}
+
+.container .content p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover {
+  background: crimson;
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+  background: #eee;
+}
+
+.form-container form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container form h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option {
+  background: #fff;
+}
+
+.form-container form .form-btn {
+  background: #fbd0d9;
+  color: crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+  background: crimson;
+  color: #fff;
+}
+
+.form-container form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form-container form p a {
+  color: crimson;
+}
+
+.form-container form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*Table Result CSS*/
+.table_container {
+  margin-left: 18%;
+  padding: 0px 5px 0px 5px ;
+}
+
+table {
+  width: 100%;
+  border-radius: 5px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #6c7ae0;
+  color: white;
+}
+
+table td,
+table th,
+table tr {
+  text-align: center;
+  border-collapse: collapse;
+  padding: 18px;
+}
+
+table tr:nth-child(even) {
+  background-color: rgb(176, 243, 176);
+}
+
+table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+table a {
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+table a.accept {
+  color: white;
+  background-color: rgb(70, 223, 70);
+}
+
+table a.accept:hover {
+  color: white;
+  background-color: green;
+}
+
+table a.reject {
+  color: white;
+  background-color: rgb(247, 112, 112);
+}
+
+
+table a.reject:hover {
+  color: white;
+  background-color: red;
+}
+
+
+
+table a.suspend {
+  color: white;
+  background-color: rgb(255, 211, 129);
+}
+
+table a.suspend:hover {
+  color: white;
+  background-color: orange;  
+}
+
+/*User_profile.php CSS*/
+.user_navbar {
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px 50px 0px 50px;
+  margin-left: 18%;
+}
+
+.user_navbar a {
+  float: left;
+  text-align: center;
+  padding: 16px 16px;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user_navbar a:hover {
+  background-color: crimson;
+}
+
+.user_navbar a.user_name:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.profile_details_container {
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.menu_profile_details {
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.menu_profile_details a {
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  cursor: default;
+  padding: 10px 10px;
+  color: black;
+}
+
+.menu_profile_details a.setting {
+  background-color: #6c7ae0;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.menu_profile_details a.setting:hover {
+  cursor: pointer;
+  background-color: crimson;
+}
+
+.user_information {
+  padding: 10px 100px 10px 100px;
+  align-items: center;
+  text-align: center;
+  background-color: #edf2f7;
+  color: gray;  
+}
+
+.user_information img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #04AA6D;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.user_information form {
+  padding: 20px;
+  text-align: center;
+}
+
+.user_information form .flex {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.user_information form .flex .inputbox {
+  width: 50%;
+  justify-content: center;
+}
+
+.user_information form .flex .inputbox span {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: #3a3a3a;
+}
+
+.user_information form .flex .inputbox .box {
+  width: 100%;
+  box-shadow: 5px 5px 5px gray;
+  color: #111;
+}
+
+.user_information form .flex .inputbox .box p.box_text {
+  width: 100%;
+  font-size: 17px;
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;
+  user-select: none;
+  padding: 16px 14px;
+}
+
+.update-profile {
+  padding: 0px 100px 0px 100px;
+  align-items: center;
+  text-align: center;
+  background-color: #edf2f7;
+  color: gray;
+  
+}
+
+.update-profile form {
+  padding: 20px;
+  text-align: center;
+  text-align: center;
+}
+
+.update-profile form img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #04AA6D;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.update-profile form .flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap:15px;
+}
+
+.update-profile form .flex .inputBox{
+  width: 50%;
+}
+
+.update-profile form .flex .inputBox span{
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: black;
+}
+
+.update-profile form .flex .inputBox .box{
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  padding:12px 14px;
+  font-size: 17px;
+  color: black;
+  margin-top: 10px;
+}
+
+.update-profile form .btn {
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: medium;
+  border: none;
+}
+
+.update-profile form .delete-btn {
+  border-radius: 5px;
+  padding: 11px 30px;  
+  color: white;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.update-profile form .btn {
+  background-color: rgb(112, 194, 112);
+}
+
+.update-profile form .btn:hover {
+  background-color: green;
+}
+
+.update-profile form .delete-btn{
+  background-color: rgb(242, 122, 122);
+}
+
+.update-profile form .delete-btn:hover{
+  background-color: red;
+}
+
+.profile_details_container .user_footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-left: 18%;
+}
+
+/*CSS for Admin_page.php*/
+
+.admin_menu_row {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.admin_menu_row a.no_click {
+  font-size: xx-large;
+  cursor: default;
+}
+
+.admin_menu_row p {
+  padding: 0px 0px 0px 16px;
+  text-align: center;
+  border-right: solid 10px rgba(255, 255, 255, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .70);
+}
+
+.admin_menu_row p {
+  animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+}
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-color: black;
+  }
+
+  to {
+    border-color: green;
+  }
+}
+
+.admin_menu_row a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: medium;
+  color: green;
+  display: block;
+}
+
+.admin_menu_row a i {
+  color: black;
+}
+
+.admin_menu_row a:hover {
+  color: #f1f1f1;
+}
+
+.admin_user_navbar {
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px 50px 0px 50px;
+  margin-left: 18%;
+}
+
+.admin_user_navbar a {
+  float: left;
+  text-align: center;
+  padding: 16px 16px;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.admin_user_navbar a:hover {
+  background-color: crimson;
+}
+
+.admin_user_navbar a.first_link:hover {
+  background-color: #333;
+  color: green;
+}
+
+.admin_user_navbar a.user_name:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.right_to_menu {
+  border: none;
+  margin-left: 18%; 
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_to_menu .flex-container {
+  display: flex;
+  padding-top: 5px;
+  width: 100%;  
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  padding: 35px;
+  margin: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 242);
+}
+
+.flex-container > div p {
+  color: rebeccapurple;
+}
+
+.flex-container > div span {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/*User_page.php CSS*/
+.user_menu_row {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.user_menu_row a.no_click {
+  font-size: xx-large;
+  cursor: default;
+}
+
+.user_menu_row p {
+  padding: 0px 0px 0px 16px;
+  text-align: center;
+  border-right: solid 10px rgba(255, 255, 255, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .70);
+}
+
+.user_menu_row p {
+  animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+}
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-color: black;
+  }
+
+  to {
+    border-color: green;
+  }
+}
+
+.user_menu_row a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: medium;
+  color: green;
+  display: block;
+}
+
+.user_menu_row a i {
+  color: black;
+}
+
+.user_menu_row a:hover {
+  color: #f1f1f1;
+}
+
+
+/*host_page.php CSS*/
+.host_user_navbar {
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px 50px 0px 50px;
+  margin-left: 18%;
+}
+
+.host_user_navbar a {
+  float: left;
+  text-align: center;
+  padding: 16px 16px;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.host_user_navbar a:hover {
+  background-color: crimson;
+}
+
+.host_user_navbar a.user_name:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.host_menu_row {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.host_menu_row a.no_click {
+  font-size: xx-large;
+  cursor: default;
+}
+
+.host_menu_row p {
+  padding: 0px 0px 0px 16px;
+  text-align: center;
+  border-right: solid 10px rgba(255, 255, 255, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .70);
+}
+
+.host_menu_row p {
+  animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+}
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-color: black;
+  }
+
+  to {
+    border-color: green;
+  }
+}
+
+.host_menu_row a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: medium;
+  color: green;
+  display: block;
+}
+
+.host_menu_row a i {
+  color: black;
+}
+
+.host_menu_row a:hover {
+  color: #f1f1f1;
+}
+
+.right_to_menu .host_content {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.right_to_menu .host_content .row {
+  padding: 5px;
+}
+
+.right_to_menu .host_content .row .row_heading {
+  padding: 40px 30px 0px 30px;
+}
+
+.row_heading .page-header {
+  
+  font-weight: 500;
+  font-size: 40px;
+  color: gray;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.row_heading .breadcrumb {
+  margin: 20px 0px 20px 0px;
+  padding: 10px 15px 10px 15px;
+  list-style-type: none;
+  background-color: #f5f5f5;
+}
+
+.row_heading .breadcrumb .active {
+  font-size: small;
+  color: #d5c8bf;
+}
+
+.panel {
+  margin: 0px 35px 25px 35px;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel .panel-heading {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;  
+  padding: 10px 15px 10px 15px;
+  background-color: #2196f3;  
+}
+
+.panel .panel-heading .panel-title {
+  font-weight: 500;
+  color: white;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.panel-body form {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+}
+
+.panel-body .input-container {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+
+.input-container .input-field_name {
+  width: 20%;
+}
+
+.input-container .input-field_name p {
+  padding: 15px;
+  font-size: medium;
+  text-align: right;  
+}
+
+.input-container .input-field {
+  padding: 5px;
+  text-align: left;
+  width: 80%;
+}
+
+.panel-body .input-container .input-field i {
+  background: dodgerblue;
+  font-size: small;
+  padding: 16px;
+  color: white;
+  width: 53px;
+  text-align: center;
+}
+
+.input-container .input-field input[type=text],
+.input-container .input-field input[type=date],
+.input-container .input-field input[type=time],
+.input-container .input-field select {
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid dodgerblue;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.input-container .input-field input[type=text]:focus,
+.input-container .input-field input[type=date]:focus,
+.input-container .input-field input[type=time]:focus,
+select:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-body form .panel_btn {
+  background-color: dodgerblue;
+  color: white;
+  font-size: medium;
+  border-radius: 2px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.panel-body form .panel_btn:hover {
+  opacity: 1;
+}
+
+/*Update_Host_profile.php CSS*/
+.address_head {
+  padding: 10px;
+  font-size: larger;
+}
+
+.address_update {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.address_update span {
+  text-align: left;
+  display: block;  
+  font-size: larger;
+  color: #3a3a3a;
+}
+
+.address_update .address_box {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  padding:12px 14px;
+  border: none;
+  font-size: 17px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/*bookslot.php CSS */
+
+.right_to_menu .find_slot {
+  padding: 20px;
+}
+
+.find_slot .input-search input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://img.icons8.com/fluency/30/000000/search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 50px;
+  transition: width 0.4s ease-in-out;
+}
+
+.find_slot .input-search input[type=date] {
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
+  padding: 11px 20px 11px 50px;
+}
+
+.find_slot input[type=text]:focus,
+.find_slot input[type=date]:focus {
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: dodgerblue;
+}
+
+.search_slot {
+  border-radius: 4px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  padding: 12px 14px;
+}
+
+.search_slot:hover {
+  color: white;
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+}
+
+.show-table {
+  padding: 5px;
+}
+
+.show-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.show-table table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #6c7ae0;
+  color: white;
+}
+
+.show-table table td,
+.show-table table th,
+.show-table table tr {
+  text-align: center;
+  border-collapse: collapse;
+  padding: 12px;
+}
+
+.show-table table tr:nth-child(even) {
+  background-color: rgb(176, 243, 176);
+}
+
+.show-table table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.show-table table a {
+  text-align: center;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.show-table table a.book {
+  color: white;
+  background-color: rgb(70, 223, 70);
+}
+
+.show-table table a.book:hover {
+  color: white;
+  background-color: green;
+}
+
+.book-slot {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgb(184, 184, 184);  
+}
+
+.book-slot h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.book-slot .user-info {
+  margin: 1px 10px 10px 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.user-info .user-heading {
+  background-color: rgb(184, 184, 184);
+  padding: 6px 0px 6px 15px;  
+  width: 100%;
+}
+
+.user-info .user-detials {
+  padding: 2px 0px 2px 15px;
+  color: black;
+}
+
+.user-info .user-detials .info {
+  color: green;
+}
+
+.book-slot .slot-info {
+  margin: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.slot-info .user-heading {
+  background-color: rgb(184, 184, 184);
+  padding: 6px 0px 6px 15px;
+  width: 100%;
+}
+
+.slot-info .user-detials {
+  padding: 2px 0px 2px 15px;
+}
+
+.slot-info .user-detials .info {
+  color: green;
+}
+
+.book-slot .car-form {
+  border: 1px solid rgb(184, 184, 184);
+  margin: 10px;
+  padding: 10px;
+}
+
+.book-slot .car-form form .input-car-info input[type=text] {
+  width: 300px;
+  margin: 5px;
+  color: #04AA6D;
+  font-size: medium;
+  border: 1px solid dodgerblue;
+  padding: 12px;
+}
+
+.book-slot .car-form form .input-car-info input[type=time] {
+  width: 100px;
+  margin: 5px;
+  font-size: medium;
+  border: 1px solid dodgerblue;
+  padding: 11px;
+}
+
+.table-slot-container {
+  margin: 0;
+}
+
+.table-slot-container table {
+  width: 100%;
+}
+
+.table-slot-container table th {
+  text-align: center;
+  background-color: #6c7ae0;
+  color: white;
+}
+
+.table-slot-container table td,
+.table-slot-container table th,
+.table-slot-container table tr {
+  text-align: center;
+  padding-top: 12px;
+  font-size: small;
+  padding-bottom: 12px;
+}
+
+.table-slot-container table a {
+  text-align: center;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.table-slot-container table a.book {
+  color: white;
+  background-color: rgb(70, 223, 70);
+}
+
+.table-slot-container table a.book:hover {
+  color: white;
+  background-color: green;
+}
+
+/*Booking_summary.php*/
+
+.invoice-btn-red {
+  background-color: rgb(252, 179, 179);
+  color: white;
+  text-decoration: none;  
+  cursor: not-allowed;
+}
+
+.invoice-btn-green {
+  text-decoration: none;
+  background-color: rgb(75, 219, 75);
+  color: white;
+}
+
+.invoice-btn-green:hover {
+  text-decoration: none;
+  background-color: lightgreen;
+  color: white;
+}

@@ -26,6 +26,10 @@ html, body {
     font-weight: 600;
 }
 
+.navbar_right {
+    float: right;
+}
+
 .navbar a:hover {
     color: green;
 }
@@ -38,6 +42,13 @@ html, body {
     .navbar a:not(:first-child) {
         display: none;
     }
+    
+    .navbar_right {
+        float: none;
+    }
+    .navbar_right a:not(:first-child) {
+        display: none;        
+    } 
 
     .navbar a.icon {
         float: right;
